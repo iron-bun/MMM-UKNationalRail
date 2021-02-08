@@ -131,10 +131,6 @@ Module.register("MMM-UKNationalRail", {
         var table = document.createElement("table");
         table.className = "small";
 
-        if (this.trains.stationName !== null) {
-            this.config.header = this.trains.stationName;
-        }
-
         //With data returned
         if (this.trains.data.length > 0) {
             for (var t in this.trains.data) {

@@ -21,17 +21,17 @@ To use this module, add it to the modules array in the `config/config.js` file:
 ```javascript
 modules: [
     {
-		module: 		'MMM-UKNationalRail',
-		position: 		'bottom_left',
-		header:			'Departures',		//Optional - delete this line to turn OFF the header completely
-		config: {
-			stationCode: 		'SUR', 		// CRS code for station
-			app_id: 			'', 		// TransportAPI App ID
-			app_key: 			'', 		// TransportAPI App Key
-			maxResults: 		5,  		//Optional - Maximum results to display.
-			showOrigin: 		false   	//Optional - Show the origin of the train in the table
-		}
-	},
+                module:                 'MMM-UKNationalRail',
+                position:               'bottom_left',
+                config: {
+                        header:                     'Departures',                //Optional - delete this line to turn OFF the header completely
+                        stationCode                 'SUR',                 // CRS code for station
+                        app_id:                     '',                 // TransportAPI App ID
+                        app_key:                    '',                 // TransportAPI App Key
+                        maxResults:                 5,                  //Optional - Maximum results to display.
+                        showOrigin:                 false           //Optional - Show the origin of the train in the table
+                }
+        },
 ]
 ```
 There are 3 MANDATORY fields - `stationCode`, `app_id` and `app_key`. All the others are used to limit the amount of info you get back, especially useful for busy stations like Clapham Junction.
